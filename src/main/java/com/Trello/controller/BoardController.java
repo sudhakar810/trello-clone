@@ -29,9 +29,6 @@ import javax.websocket.server.PathParam;
 public class BoardController {
 
     @Autowired
-    BoardRepository boardRepository;
-    
-    @Autowired
     private BoardService boardService;
 
     @PostMapping(value = "/board", consumes = MediaType.APPLICATION_JSON_VALUE)
